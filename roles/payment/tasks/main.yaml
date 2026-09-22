@@ -8,7 +8,7 @@
     name: common
     tasks_from: python-setup.yaml
 
-- nmae: run the systemd setup 
+- name: run the systemd setup 
   ansible.builtin.import_role:
     name: common 
     tasks_from: systemd-setup.yaml
