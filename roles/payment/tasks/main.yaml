@@ -13,13 +13,10 @@
     name: common 
     tasks_from: systemd-setup.yaml
 
-
-
-
-- name: copy the payment service
-  ansible.builtin.template:
-    src: payment.service.j2
-    dest: /etc/systemd/system/payment.service
+# - name: copy the payment service
+#   ansible.builtin.template:
+#     src: payment.service.j2
+#     dest: /etc/systemd/system/payment.service
 
 - name: start payment
   ansible.builtin.service:
