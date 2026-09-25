@@ -1,6 +1,10 @@
 - name: message-1
   ansible.builtin.debug:
     msg: "Hi from MSG-1"
+
+- name: set the os fact # set_fact means dynamically set variable
+  ansible.builtin.set_fact:
+    os: "Linux"
   
 - name: message-2
   ansible.builtin.debug:
